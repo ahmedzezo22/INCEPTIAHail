@@ -84,13 +84,16 @@ const Navbar = () => {
           </div>
 
           <div>
-            <Image
-              src="/mages/logo2.png"
-              alt="image logo nisbau"
-              width={200}
-              height={100}
-              className={styles.logo_img}
-            />
+            <div className={styles.logoContainer}>
+              <Image
+                src="/mages/logo2.png"
+                alt="image logo nisbau"
+                width={200}
+                height={100}
+                className={styles.logo_img}
+              />
+              <div className={styles.logoText}>{t("header.executiveOffice")}</div>
+            </div>
           </div>
 
           <div>

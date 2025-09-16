@@ -1,13 +1,13 @@
 .wrapperNavbar{
     background-color: var(--main-color);
-    height: 80px;
+    height: 100px;
 }
 
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
+    height: 100px;
 }
 
 .scrollShow {
@@ -48,6 +48,26 @@
   gap: 8px;
   color: white;
   font-weight: 600;
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  padding: 5px 0;
+}
+
+.logoText {
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 500;
+  max-width: 220px;
+  line-height: 1.4;
+  padding: 0 5px;
+  direction: rtl;
+  font-family: Arial, sans-serif;
 }
 
 .navbar > div:last-child {
