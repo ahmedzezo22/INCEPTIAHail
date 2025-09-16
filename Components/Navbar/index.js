@@ -92,7 +92,7 @@ const Navbar = () => {
                 height={100}
                 className={styles.logo_img}
               />
-              <div className={styles.logoText}>{t("header.executiveOffice")}</div>
+              {/* <div className={styles.logoText}>{t("header.executiveOffice")}</div> */}
             </div>
           </div>
 
@@ -131,9 +131,9 @@ const Navbar = () => {
               <button onClick={() => handleScroll("target-group")}>
                 {t("navbar.targetGroup")}
               </button>
-              <button onClick={() => handleScroll("areas")}>
+              {/* <button onClick={() => handleScroll("areas")}>
                 {t("navbar.areas")}
-              </button>
+              </button> */}
               <button onClick={() => handleScroll("faq")}>
                 {t("navbar.faq")}
               </button>

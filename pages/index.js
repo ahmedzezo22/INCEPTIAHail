@@ -21,7 +21,7 @@ export default function Home() {
       <ProjectObjectives />
       <TargetGroup />
       <HackathonTopics />
-      <AreasAndChallenges />
+      {/* <AreasAndChallenges /> */}
       <PrizesAndBenefits />
       <Sponsors />
       <RegisterYourInterest />
