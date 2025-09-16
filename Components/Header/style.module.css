@@ -3,6 +3,19 @@
     height: calc(100vh - 80px);
     position: relative;
     overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+}
+
+.wrapperHeader .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+}
+
+.ant-carousel {
+    width: 100%;
+    max-width: 100%;
 }
 .wrapperHeader > span{
     position: absolute;
@@ -64,4 +77,31 @@
     border: 1px solid #eee;
     padding: 10px;
     border-radius: 5px;
+}
+
+.doctorResearchContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.doctorResearchImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    object-fit: cover;
+    opacity: 0.4;
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+
+.doctorResearchContainer:hover .doctorResearchImage {
+    transform: scale(1.15);
 }
