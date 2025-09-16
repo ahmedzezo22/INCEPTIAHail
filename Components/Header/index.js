@@ -5,6 +5,10 @@ import Image from "next/image";
 import styles from "./style.module.css";
 import { useTranslation } from "react-i18next";
 
+// ✅ framer-motion
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 const Header = () => {
   const { t } = useTranslation();
 
@@ -41,16 +45,37 @@ const Header = () => {
     return () => clearInterval(timer);
   }, [targetDate]);
 
+  // ✅ نراقب الهيدر نفسه
+  const { ref, inView } = useInView({
+    triggerOnce: false, // عشان يتكرر لما ترجعله تاني
+    threshold: 0.2,
+  });
+
   return (
     <div className={styles.wrapperHeader} id="home">
-      <span> </span>
-      <span> </span>
-      <div className="container" style={{ height: "100%", width: "100%", maxWidth: "100%" }}>
-        <Carousel autoplay autoplaySpeed={1500} arrows>
-          <div className={styles.slide}>
+      <span></span>
+      <span></span>
+
+      {/* انيميشن الكونتينر كله */}
+      <motion.div
+        className="container"
+        style={{ height: "100%", width: "100%", maxWidth: "100%" }}
+        ref={ref}
+        initial={{ opacity: 0, y: 80, scale: 0.8 }} // صغير ونازل
+        animate={inView ? { opacity: 1, y: 0, scale: 1 } : {}} // يطلع ويكبر
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
+        <Carousel autoplay autoplaySpeed={2000} arrows>
+          {/* slide 1 */}
+          <motion.div
+            className={styles.slide}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={inView ? { opacity: 1, scale: 1 } : {}}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
             <div>
               <Image
-             src="/mages/InceptiaHailLogo.png"
+                src="/mages/InceptiaHailLogo.png"
                 alt={t("header.logoAlt")}
                 width={220}
                 height={100}
@@ -89,10 +114,26 @@ const Header = () => {
                 </div>
               </div>
             </div>
-          </div>
-             <div className={styles.slide}>
+          </motion.div>
+
+          {/* slide 2 */}
+          <motion.div
+            className={styles.slide}
+            initial={{ opacity: 0, y: 60, scale: 0.9 }}
+            animate={inView ? { opacity: 1, y: 0, scale: 1 } : {}}
+            transition={{ duration: 0.8, delay: 0.3 }}
+          >
             <div className={styles.doctorResearchContainer}>
-              <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", zIndex: 0 }}>
+              <div
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                  zIndex: 0,
+                }}
+              >
                 <div className={styles.doctorResearchImageContainer}>
                   <Image
                     src="/mages/bannerDocImg.png"
@@ -104,25 +145,27 @@ const Header = () => {
                 </div>
               </div>
             </div>
-          </div>
-         
+          </motion.div>
 
-          <div className={styles.slide}>
+          {/* slide 3 */}
+          <motion.div
+            className={styles.slide}
+            initial={{ opacity: 0, scale: 0.7 }}
+            animate={inView ? { opacity: 1, scale: 1 } : {}}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
             <Image
-            src="/mages/InceptiaHailLogo.png"
-
+              src="/mages/InceptiaHailLogo.png"
               alt={t("header.slideAlt")}
               width={800}
               height={400}
               className={styles.slideImage}
             />
-          </div>
-      
+          </motion.div>
         </Carousel>
-      </div>
+      </motion.div>
     </div>
   );
 };
 
 export default Header;
-

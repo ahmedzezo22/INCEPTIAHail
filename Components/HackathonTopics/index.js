@@ -1,9 +1,41 @@
+"use client";
 import React from "react";
 import styles from "./style.module.css";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const HackathonTopics = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const isArabic = i18n.language === "ar";
+
+  const { ref, inView } = useInView({
+    triggerOnce: false, // 👈 يتكرر مع كل دخول للفيو
+    threshold: 0.2,
+  });
+
+  const titleVariant = {
+    hidden: { opacity: 0, y: -30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  };
+
+  const cardContainer = {
+    visible: {
+      transition: {
+        staggerChildren: 0.25, // 👈 يخلي الكروت تطلع ورا بعض
+      },
+    },
+  };
+
+  const cardVariant = {
+    hidden: { opacity: 0, x: isArabic ? -60 : 60 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
+  };
 
   const cards = [
     { id: 1, key: "card1" },
@@ -12,16 +44,32 @@ const HackathonTopics = () => {
   ];
 
   return (
-    <div className={styles.wrapperHackathonTopics} id="topics">
+    <div className={styles.wrapperHackathonTopics} id="topics" ref={ref}>
       <span></span>
       <span></span>
       <span></span>
       <span></span>
       <div className="container">
-        <h4>{t("HackathonTopics.title")}</h4>
-        <div className={styles.cards}>
+        <motion.h4
+          variants={titleVariant}
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+        >
+          {t("HackathonTopics.title")}
+        </motion.h4>
+
+        <motion.div
+          className={styles.cards}
+          variants={cardContainer}
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+        >
           {cards.map((card) => (
-            <div className={styles.card} key={card.id}>
+            <motion.div
+              className={styles.card}
+              key={card.id}
+              variants={cardVariant}
+            >
               <span>{card.id}</span>
               <h4>{t(`HackathonTopics.cards.${card.key}.title`)}</h4>
 
@@ -42,9 +90,9 @@ const HackathonTopics = () => {
                   <li key={index}>{item}</li>
                 ))}
               </ol>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );

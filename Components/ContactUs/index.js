@@ -1,14 +1,18 @@
+"use client";
 import React from "react";
 import styles from "./style.module.css";
 import { Form, Input, Select, Button, message } from "antd";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 
 const { Option } = Select;
 const { TextArea } = Input;
 
 const ContactUs = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [form] = Form.useForm();
+
+  const isRTL = i18n.language === "ar"; // لو عربي يبقى RTL
 
   const onFinish = () => {
     message.success(t("contact.successMessage"));
@@ -18,21 +22,34 @@ const ContactUs = () => {
   return (
     <div className={styles.wrapperContactUs} id="contact">
       <div className="container">
-        <h4>{t("contact.title")}</h4>
-        <p>{t("contact.subtitle")}</p>
+        {/* العنوان + الساب تايتل */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <h4>{t("contact.title")}</h4>
+          <p>{t("contact.subtitle")}</p>
+        </motion.div>
 
         <div className={styles.content}>
           {/* Location Section */}
-          <div className={styles.location}>
+          <motion.div
+            className={styles.location}
+            initial={{ opacity: 0, x: isRTL ? 100 : -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
             <h6>{t("contact.locationTitle")}</h6>
-            {/* clickable address */}
             <a
               href="https://maps.google.com/?q=Hail"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.addressLink}
             >
-              حي النقرة، طريق الملك عبدالعزيز (حائل)
+              {t("contact.address")}
             </a>
             <iframe
               src="https://www.google.com/maps?q=Hail&output=embed"
@@ -44,10 +61,16 @@ const ContactUs = () => {
               referrerPolicy="no-referrer-when-downgrade"
               title="location"
             ></iframe>
-          </div>
+          </motion.div>
 
           {/* Form Section */}
-          <div className={styles.formSection}>
+          <motion.div
+            className={styles.formSection}
+            initial={{ opacity: 0, x: isRTL ? -100 : 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
             <Form
               form={form}
               layout="vertical"
@@ -110,7 +133,7 @@ const ContactUs = () => {
                 </Button>
               </Form.Item>
             </Form>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

@@ -3,14 +3,14 @@
 }
 
 
-.wrapperContactUs > div > h4 {
+.wrapperContactUs > div  h4 {
   text-align: center;
   color:var(--main-color);
   font-size: 23px;
   font-weight: 600;
   margin-bottom: 20px;
 }
-.wrapperContactUs > div > p{
+.wrapperContactUs > div  p{
     text-align: center;
     margin-bottom: 30px;
     color: #888;
