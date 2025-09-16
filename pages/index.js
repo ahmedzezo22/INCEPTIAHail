@@ -14,7 +14,7 @@ import TargetGroup from "@/Components/TargetGroup";
 
 export default function Home() {
   return (
-    <div>
+    <div style={{ overflow: "hidden" }} >
       <Navbar />
       <Header />
       <About />
