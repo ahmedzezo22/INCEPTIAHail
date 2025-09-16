@@ -47,21 +47,6 @@ const Header = () => {
       <span> </span>
       <div className="container" style={{ height: "100%", width: "100%", maxWidth: "100%" }}>
         <Carousel autoplay autoplaySpeed={1500} arrows>
-         
-             <div className={styles.slide}>
-            <div className={styles.doctorResearchContainer}>
-              <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", zIndex: 0 }}>
-                <Image
-                  src="/mages/bannerDocImg.png"
-                  alt={t("header.doctorResearchAlt")}
-                  width={1920}
-                  height={1080}
-                  className={styles.doctorResearchImage}
-                  style={{ objectFit: "cover", opacity: 0.4, width: "100%" }}
-                />
-              </div>
-            </div>
-          </div>
           <div className={styles.slide}>
             <div>
               <Image
@@ -105,6 +90,21 @@ const Header = () => {
               </div>
             </div>
           </div>
+             <div className={styles.slide}>
+            <div className={styles.doctorResearchContainer}>
+              <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", zIndex: 0 }}>
+                <Image
+                  src="/mages/bannerDocImg.png"
+                  alt={t("header.doctorResearchAlt")}
+                  width={1920}
+                  height={1080}
+                  className={styles.doctorResearchImage}
+                  style={{ objectFit: "cover", opacity: 0.4, width: "100%" }}
+                />
+              </div>
+            </div>
+          </div>
+         
 
           <div className={styles.slide}>
             <Image
