@@ -1,0 +1,102 @@
+.wrapperFooter {
+  border-top: 3px solid var(--main-color);
+  padding: 20px 0;
+  background-color: var(--main-color);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.footerItem {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.footerItem:nth-of-type(1) {
+  justify-content: flex-start;
+}
+
+/* التاني في النص */
+.footerItem:nth-of-type(2) {
+  justify-content: center;
+}
+
+/* التالت في الآخر */
+.footerItem:nth-of-type(3) {
+  justify-content: flex-end;
+}
+
+.logo_img {
+  width: 180px;
+  height: auto;
+}
+
+.wrapperFooter p {
+  color: #fff;
+  margin: 0;
+  font-size: 14px;
+}
+
+.socialIcons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialIcons li {
+  margin: 0 5px;
+}
+
+.socialIcons li a {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #fff;
+  border-radius: 50%;
+  font-size: 15px;
+  color: #252525;
+  transition: 0.3s ease-in-out;
+}
+
+.socialIcons li a svg {
+  width: 16px;
+  height: 16px;
+}
+
+.socialIcons li:nth-of-type(1) a:hover {
+  background: #1877f2; /* Facebook */
+  color: #fff;
+}
+.socialIcons li:nth-of-type(2) a:hover {
+  background: #000000; /* X (Twitter الجديد) */
+  color: #fff;
+}
+.socialIcons li:nth-of-type(3) a:hover {
+  background: #e1306c; /* Instagram */
+  color: #fff;
+}
+.socialIcons li:nth-of-type(4) a:hover {
+  background: #0a66c2; /* LinkedIn */
+  color: #fff;
+}
+
+@media (max-width: 850px) {
+  .footer {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .footerItem {
+    flex: unset;
+  }
+}

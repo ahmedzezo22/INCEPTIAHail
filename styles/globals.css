@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic&family=Noto+Sans:wght@300;400;500&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  --container-width: 1200px;
+  --main-color: #0f2b5c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  direction: rtl;
+  text-align: right;
+  font-family: 'Noto Kufi Arabic', 'Noto Sans', sans-serif;
+}
+body.en {
+  text-align: left;
+  direction: ltr;
+  font-family: 'Noto Kufi Arabic', 'Noto Sans', sans-serif;
+}
+.container{
+  max-width: var(--container-width);
+  padding: 0 20px;
+  margin: auto;
+}
+
+.ant-carousel , 
+.ant-form-item-required , 
+.ant-form-item-explain-error ,
+.ant-checkbox-label , 
+.ant-collapse-header-text , 
+.ant-collapse-content, 
+.ant-select-item-option-content , 
+.ant-select-selection-search-input , 
+.ant-select-selection-placeholder{
+  font-family: 'Noto Kufi Arabic', 'Noto Sans', sans-serif;
+}
+
+.butDefault{
+  background-color: var(--main-color);
+  border-width: 0;
+  color: #fff;
+  font-size: 14px;
+  padding: 7px 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  font-family: 'Noto Kufi Arabic', 'Noto Sans', sans-serif;
+}
+
+.butDefault:hover{
+  opacity: 0.8;
+}
+
+.ant-input{
+  height: 34px !important;
+}
+
+
+.ant-collapse {
+  box-shadow: 0 1px 4px 0 #fff;
+}
+.ant-collapse-expand-icon svg{
+  color: #fff;
+}
+.ant-collapse-header-text{
+  color: #fff;
+}
+.ant-collapse-content-box p {
+  color: var(--main-color);
+}
+.ant-drawer-body{
+  padding: 0 !important;
+}
+.ant-drawer-body button{
+  width: 100%;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px ;
+  border-bottom: 1px solid #eee;
+  font-family: 'Noto Kufi Arabic', 'Noto Sans', sans-serif;
+  cursor: pointer;
+  transform: 0.4s;
+  -webkit-transform: 0.4s;
+  -moz-transform: 0.4s;
+  -ms-transform: 0.4s;
+  -o-transform: 0.4s;
+  color: var(--main-color);
+}
+
+.ant-drawer-body button:hover{
+  background-color: #eee;
+}
+
+.ant-drawer-header-title{
+  justify-content: flex-end;
+}

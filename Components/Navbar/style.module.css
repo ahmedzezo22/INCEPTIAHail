@@ -1,0 +1,79 @@
+.wrapperNavbar{
+    background-color: var(--main-color);
+    height: 80px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.scrollShow {
+    top: 0;
+    position: fixed;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    width: 100%;
+    z-index: 9;
+}
+
+.scrollHide {
+    top: -100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    z-index: 9;
+}
+
+.navbar > div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+
+.navbar > div:first-child {
+  justify-content: flex-start;
+}
+
+.navbar > div:nth-child(2) {
+  justify-content: center;
+  gap: 8px;
+  color: white;
+  font-weight: 600;
+}
+
+.navbar > div:last-child {
+  justify-content: flex-end;
+  color: white;
+  font-weight: 600;
+  gap: 10px;
+}
+
+.navbar > div:last-child svg{
+    font-size: 25px;
+}
+
+.navbar > div:last-child button {
+    cursor: pointer;
+}
+
+.butTranslation{
+  width: 30px ;
+  height: 30px;
+  border: 1px solid #eee;
+  font-size: 12px;
+  font-weight: normal;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}

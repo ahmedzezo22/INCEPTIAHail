@@ -1,0 +1,23 @@
+.wrapperSponsors{
+    margin-top: 60px;
+    direction: ltr;
+}
+.wrapperSponsors h4{
+    text-align: center;
+  color: var(--main-color);
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.wrapperImage {
+    margin: 0 40px;
+    text-align: center;
+}
+
+
+.wrapperImage img {
+    margin: auto;
+    object-fit: cover;
+    filter: grayscale(100%);
+}

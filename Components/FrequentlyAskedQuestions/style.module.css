@@ -1,0 +1,68 @@
+.wrapperFrequentlyAskedQuestions {
+  padding: 60px 0;
+  background-color: var(--main-color);
+  position: relative;
+  overflow: hidden;
+}
+
+
+.wrapperFrequentlyAskedQuestions > div > h4 {
+  text-align: center;
+  color: #fff;
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.wrapperFrequentlyAskedQuestions > div > p{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #888;
+}
+.wrapperFrequentlyAskedQuestions > span{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #ffffff14;
+}
+.wrapperFrequentlyAskedQuestions > span:nth-of-type(2){
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    top: 10%;
+    left: 67%;
+     width: 150px;
+    height: 150px;
+}
+.wrapperFrequentlyAskedQuestions > span:nth-of-type(3){
+ border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+   bottom: 5%;
+    right: 67%;
+     width: 150px;
+    height: 150px;
+}
+.wrapperFrequentlyAskedQuestions > span:first-of-type{
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+    top: 20%;
+    left: 50px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+.wrapperFrequentlyAskedQuestions > span:last-of-type{
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+    bottom:  15px;
+    right: 50px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}

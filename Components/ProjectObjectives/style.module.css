@@ -1,0 +1,123 @@
+.wrapperProjectObjectives {
+  padding: 60px 0;
+  background-color: var(--main-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapperProjectObjectives h4 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #fff;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.wrapperCard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* اتنين جنب بعض */
+  gap: 25px;
+}
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  background: #f9f9f9;
+  padding:30px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  background: #eef2f7;
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 30px;
+  color: var(--main-color);
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  box-shadow: 0 1px 4px 0 rgba(41, 60, 122, .21);
+}
+.icon svg{
+    font-size: 16px;
+}
+.card h6 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+.card p {
+  margin: 0;
+  color: #888;
+  font-size: 14px;
+  line-height: 1.6;
+  line-height: 30px;
+}
+
+.wrapperProjectObjectives > span{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #ffffff14;
+}
+.wrapperProjectObjectives > span:nth-of-type(2){
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    top: 10%;
+    left: 67%;
+     width: 150px;
+    height: 150px;
+}
+.wrapperProjectObjectives > span:nth-of-type(3){
+ border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+   bottom: 5%;
+    right: 67%;
+     width: 150px;
+    height: 150px;
+}
+.wrapperProjectObjectives > span:first-of-type{
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+    top: 20%;
+    left: 50px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+.wrapperProjectObjectives > span:last-of-type{
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+    bottom:  15px;
+    right: 50px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+@media (max-width: 768px) {
+  .wrapperCard {
+    grid-template-columns: 1fr; 
+  }
+}

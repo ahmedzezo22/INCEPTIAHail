@@ -1,0 +1,273 @@
+{
+  "from": "From",
+  "about": {
+    "title": "About the Hackathon",
+    "desc": "The Research and Innovation Hackathon is a unique step that aims to bring together creative minds, researchers, and innovators to exchange ideas and transform them into tangible projects. This event offers participants the opportunity to explore the latest trends in the healthcare and medical fields, applying innovative solutions and advanced technologies through stimulating scientific and practical challenges.",
+    "but": "Register Now"
+  },
+  "ProjectObjectives": {
+    "title": "Project Objectives",
+    "cards": {
+      "card1": {
+        "title": "Transforming Ideas into Publishable Research",
+        "desc": "Empowering participants to develop research that starts from a simple idea and culminates in impactful scientific publications, under academic supervision and professional guidance."
+      },
+      "card2": {
+        "title": "Creating Dynamic Research Momentum",
+        "desc": "Launching a research hackathon prior to the conference to ignite a spirit of challenge and enhance the platform for presentation and excellence among teams."
+      },
+      "card3": {
+        "title": "Building a New Generation of Research Leaders",
+        "desc": "Identifying and nurturing young research talents capable of leading sustainable scientific projects and addressing challenges in the healthcare sector."
+      },
+      "card4": {
+        "title": "Fostering Scientific Competitiveness",
+        "desc": "Recognizing the best research projects with awards and providing opportunities to showcase them before scientific committees and specialized communities."
+      }
+    }
+  },
+  "TargetGroup": {
+    "title": "Target Audience",
+    "cards": {
+      "card1": {
+        "title": "Healthcare Practitioners (Doctors – Pharmacists – Nurses – Health Technicians)",
+        "desc": "The project and hackathon give them the opportunity to highlight real-world challenges faced in the healthcare field, and to contribute in finding innovative, applicable research solutions that enhance provided services."
+      },
+      "card2": {
+        "title": "Students in Health and Scientific Disciplines",
+        "desc": "The project targets ambitious students from all universities and postgraduate programs to develop their research and practical skills, motivating them to engage in pioneering projects."
+      },
+      "card3": {
+        "title": "Healthcare Institutions and Supportive Organizations for Research and Innovation",
+        "desc": "The project represents an opportunity for strategic entities to build successful research outcomes and support them financially or logistically, ensuring the investment of ideas and their transformation into initiatives or products that serve the community and healthcare."
+      }
+    }
+  },
+  "HackathonTopics": {
+    "title": "Hackathon Tracks",
+    "cards": {
+      "card1": {
+        "title": "Innovation in Medical Education and Research (Preventive Medicine & Public Health)",
+        "challenges": {
+          "title": "Challenges:",
+          "items": [
+            "Low adoption of modern teaching methods in healthcare institutions.",
+            "Limited financial resources for developing health education programs.",
+            "Difficulty in measuring the effectiveness of educational innovations."
+          ]
+        },
+        "tracks": {
+          "title": "Tracks:",
+          "items": [
+            "Developing interactive and professional training programs on smart devices.",
+            "Establishing partnerships with educational institutions to enhance medical research.",
+            "Using technologies such as virtual reality to enrich learning experiences."
+          ]
+        }
+      },
+      "card2": {
+        "title": "Artificial Intelligence in Healthcare (Digital Transformation in the Health Sector)",
+        "challenges": {
+          "title": "Challenges:",
+          "items": [
+            "Resistance to change among healthcare workers.",
+            "Privacy and security concerns related to health data.",
+            "Lack of training and awareness on using AI tools."
+          ]
+        },
+        "tracks": {
+          "title": "Tracks:",
+          "items": [
+            "Developing platforms for knowledge sharing and training on AI in health.",
+            "Creating regulatory guidelines and ethical frameworks for AI in healthcare.",
+            "Studying successful case examples of AI applications in improving health outcomes."
+          ]
+        }
+      },
+      "card3": {
+        "title": "Genomics and Genetic Technologies (Modern Medicine & Advanced Medical Techniques)",
+        "challenges": {
+          "title": "Challenges:",
+          "items": [
+            "High financial costs of genetic technologies.",
+            "Low public awareness of the benefits of genomics.",
+            "Ethical issues related to genetic modification."
+          ]
+        },
+        "tracks": {
+          "title": "Tracks:",
+          "items": [
+            "Promoting research in genomics and reducing associated costs.",
+            "Organizing awareness campaigns to educate the public on the benefits of genomics.",
+            "Developing ethical guidelines and frameworks for the use of genetic technologies."
+          ]
+        }
+      }
+    }
+  },
+  "Areas": {
+    "title": "Areas & Challenges",
+    "desc": "Eight main tracks you can compete in",
+    "cards": {
+      "card1": {
+        "title": "Artificial Intelligence in Healthcare",
+        "desc": "AI-based solutions to improve diagnosis and decision support."
+      },
+      "card2": {
+        "title": "Smart Medical Education",
+        "desc": "Digital learning and training platforms for healthcare practitioners."
+      },
+      "card3": {
+        "title": "Community Health and Prevention",
+        "desc": "Community prevention and early risk detection."
+      },
+      "card4": {
+        "title": "Digital Mental Health",
+        "desc": "Psychological support apps and behavioral analytics."
+      },
+      "card5": {
+        "title": "Patient Experience",
+        "desc": "Improving patient journey and access to services."
+      },
+      "card6": {
+        "title": "Health Data Analytics",
+        "desc": "Predictive analytics and actionable insights."
+      },
+      "card7": {
+        "title": "Women and Child Health Empowerment",
+        "desc": "Solutions focused on maternal and child health."
+      },
+      "card8": {
+        "title": "Smart Devices & Remote Monitoring",
+        "desc": "Wearable devices and remote health monitoring."
+      }
+    }
+  },
+  "Prizes": {
+    "title": "Prizes & Benefits",
+    "desc": "Financial opportunities and perks for winners",
+    "cards": {
+      "card1": {
+        "title": "First Place",
+        "prize": "15,000 SAR",
+        "benefits": {
+          "benefit1": "Project incubation",
+          "benefit2": "Connection with potential partners",
+          "benefit3": "International showcasing opportunity"
+        }
+      },
+      "card2": {
+        "title": "Second Place",
+        "prize": "10,000 SAR",
+        "benefits": {
+          "benefit1": "Technical consultations",
+          "benefit2": "Local showcasing opportunity"
+        }
+      },
+      "card3": {
+        "title": "Third Place",
+        "prize": "5,000 SAR",
+        "benefits": {
+          "benefit1": "Participation certificate",
+          "benefit2": "Initial technical and marketing support"
+        }
+      }
+    }
+  },
+  "registerInterest": {
+    "title": "Register Your Interest",
+    "description": "Leave your basic details and we will contact you about the suitable events and services for your activity."
+  },
+  "form": {
+    "fullName": "Full Name",
+    "email": "Email Address",
+    "phone": "Mobile Number",
+    "company": "Organization / Company",
+    "agreePrefix": "I agree to the",
+    "terms": "Terms & Conditions",
+    "and": "and",
+    "privacy": "Privacy Policy",
+    "submit": "Submit Request",
+    "successTitle": "Success",
+    "successMessage": "Your request has been submitted successfully"
+  },
+  "validation": {
+    "requiredName": "Full name is required",
+    "minName": "Name must be at least 3 characters",
+    "requiredEmail": "Email is required",
+    "invalidEmail": "Invalid email format",
+    "requiredPhone": "Mobile number is required",
+    "invalidPhone": "Mobile number must be between 9 and 15 digits",
+    "requiredCompany": "Organization or company is required",
+    "requiredAgreement": "You must agree to the Terms & Conditions"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": "What is the official language of the hackathon?",
+    "a1": "The official communication and presentations will be in Arabic, while technical materials may be accepted in English when needed.",
+    "q2": "Can I submit my idea in Arabic or English?",
+    "a2": "Yes, you can register your idea in either Arabic or English, with a preference for unifying the final presentation language.",
+    "q3": "Can I submit more than one idea?",
+    "a3": "You may submit more than one idea, but you will be asked to choose one idea for execution during the implementation stage.",
+    "q4": "Can I register with more than one team?",
+    "a4": "No, you must commit to a single team to ensure fairness and organized effort distribution.",
+    "q5": "What is the duration of the hackathon?",
+    "a5": "The hackathon runs for two to three consecutive days, including workshops and mentoring sessions.",
+    "q6": "Where will the hackathon be held?",
+    "a6": "The hackathon will be held in person at a location announced through official channels, with possible digital access for some activities.",
+    "q7": "Is it mandatory for all team members to attend?",
+    "a7": "It is recommended that all team members attend for effective progress. At minimum, the team leader and one technical member must be present."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We’d love to hear from you — leave your message and we’ll get back to you soon",
+    "locationTitle": "Project Headquarters in Hail",
+    "locationText": "Cairo, Arab Republic of Egypt",
+    "name": "Full Name",
+    "email": "Email Address",
+    "subject": "Choose Subject",
+    "selectPlaceholder": "Select a subject",
+    "message": "Message",
+    "send": "Send",
+    "required": "This field is required",
+    "invalidEmail": "Invalid email address",
+    "successMessage": "Your message has been sent successfully",
+    "options": {
+      "registration": "Registration Assistance",
+      "technical": "Technical Questions",
+      "sponsorship": "Sponsorship Inquiries",
+      "media": "Media & Press",
+      "general": "General Question",
+      "other": "Other"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved to",
+    "companyName": "Hackathon"
+  },
+  "navbar": {
+  "home": "Home",
+  "about": "About Hackathon",
+  "objectives": "Project Objectives",
+  "targetGroup": "Target Group",
+  "areas": "Areas",
+  "faq": "FAQ",
+  "prizes": "Prizes",
+  "contact": "Contact Us",
+  "register": "Register Now"
+},
+"sponsors": {
+    "title": "Sponsors"
+  },
+  "header": {
+    "logoAlt": "Hackathon logo",
+    "subtitle": "Where research and innovation begin",
+    "title": "Hackathon",
+    "countdownTitle": "Time left until registration ends",
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "slideAlt": "Slide image"
+  }
+}
