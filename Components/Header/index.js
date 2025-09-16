@@ -50,7 +50,7 @@ const Header = () => {
           <div className={styles.slide}>
             <div>
               <Image
-             src="/mages/InceptialLogo.png"
+             src="/mages/InceptiaHailLogo.png"
                 alt={t("header.logoAlt")}
                 width={220}
                 height={100}
@@ -109,7 +109,7 @@ const Header = () => {
 
           <div className={styles.slide}>
             <Image
-            src="/mages/InceptialLogo.png"
+            src="/mages/InceptiaHailLogo.png"
 
               alt={t("header.slideAlt")}
               width={800}
