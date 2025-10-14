@@ -43,6 +43,38 @@ const HackathonTopics = () => {
     { id: 3, key: "card3" },
   ];
 
+  const tracks = [
+    {
+      id: 1,
+      title: t("projectTracks.tracks.innovation.title"),
+      desc: t("projectTracks.tracks.innovation.desc"),
+    },
+    {
+      id: 2,
+      title: t("projectTracks.tracks.preventive.title"),
+      desc: t("projectTracks.tracks.preventive.desc"),
+    },
+    {
+      id: 3,
+      title: t("projectTracks.tracks.ai.title"),
+      desc: t("projectTracks.tracks.ai.desc"),
+    },
+    {
+      id: 4,
+      title: t("projectTracks.tracks.digital.title"),
+      desc: t("projectTracks.tracks.digital.desc"),
+    },
+    {
+      id: 5,
+      title: t("projectTracks.tracks.modern.title"),
+      desc: t("projectTracks.tracks.modern.desc"),
+    },
+    {
+      id: 6,
+      title: t("projectTracks.tracks.genomics.title"),
+      desc: t("projectTracks.tracks.genomics.desc"),
+    },
+  ];
   return (
     <div className={styles.wrapperHackathonTopics} id="topics" ref={ref}>
       <span></span>
@@ -55,7 +87,7 @@ const HackathonTopics = () => {
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
         >
-          {t("HackathonTopics.title")}
+          {t("projectTracks.title")}
         </motion.h4>
 
         <motion.div
@@ -64,7 +96,19 @@ const HackathonTopics = () => {
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
         >
-          {cards.map((card) => (
+          {tracks.map((track) => (
+            <motion.div
+              className={styles.card}
+              key={track.id}
+              variants={cardVariant}
+            >
+              <span>{track.id}</span>
+              <h4>{track.title}</h4>
+
+              <p>{track.desc}</p>
+            </motion.div>
+          ))}
+          {/* {cards.map((card) => (
             <motion.div
               className={styles.card}
               key={card.id}
@@ -91,7 +135,7 @@ const HackathonTopics = () => {
                 ))}
               </ol>
             </motion.div>
-          ))}
+          ))} */}
         </motion.div>
       </div>
     </div>

@@ -66,7 +66,7 @@ body.en {
 }
 
 .ant-input{
-  height: 34px !important;
+  /* height: 34px !important; */
 }
 
 
@@ -109,4 +109,12 @@ body.en {
 
 .ant-drawer-header-title{
   justify-content: flex-end;
+}
+
+button{
+  font-family: 'Noto Kufi Arabic', 'Noto Sans', sans-serif !important;
+}
+
+.En button{
+  font-family: 'Noto Kufi Arabic', 'Noto Sans', sans-serif !important;
 }

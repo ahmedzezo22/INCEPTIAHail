@@ -271,5 +271,66 @@
     "seconds": "Seconds",
     "slideAlt": "Slide image",
     "executiveOffice": "Executive Affairs for Academic Affairs, Training and Research Center"
+  },
+   "projectTracks": {
+    "title": "Project Tracks",
+    "desc": "They were identified based on the research priorities and actual needs of the Hail region to guide participants toward areas with direct impact.",
+    "tracks": {
+      "innovation": {
+        "title": "Innovation in Medical Education and Research",
+        "desc": "Developing modern medical education and research methods that contribute to improving output quality."
+      },
+      "preventive": {
+        "title": "Preventive Medicine and Public Health",
+        "desc": "Enhancing prevention programs and raising awareness to reduce chronic and infectious diseases."
+      },
+      "ai": {
+        "title": "Artificial Intelligence in Medicine and Healthcare",
+        "desc": "Utilizing artificial intelligence technologies to support diagnosis, treatment, and improve efficiency."
+      },
+      "digital": {
+        "title": "Digital Transformation in the Health Sector",
+        "desc": "Accelerating the adoption of digital solutions to enhance healthcare service efficiency."
+      },
+      "modern": {
+        "title": "Modern Medicine and Advanced Medical Technologies",
+        "desc": "Introducing advanced tools and technologies to support diagnosis, treatment, and improve care quality."
+      },
+      "genomics": {
+        "title": "Genomics and Genetic Technologies",
+        "desc": "Leveraging genetics to understand diseases and develop precise treatments."
+      }
+    }
+  },
+  "login": {
+    "conditionsTitle": "First: Registration Criteria",
+    "conditionsList": [
+      "The participant's personal information must be accurate and correct.",
+      "Commitment to accuracy and quality of outputs.",
+      "Commitment to the defined hackathon practices.",
+      "Provide a CV that includes experience and research interests.",
+      "Specify the type of work and team leader in advance.",
+      "Be available for active participation within the work teams.",
+      "Participation must be based on original and new ideas that have not been submitted elsewhere.",
+      "The team should consist of 3 to 6 members maximum."
+    ],
+    "requirementsTitle": "Second: Conditions",
+    "requirementsList": [
+      "Full commitment to attending all conference and hackathon days at the event venue.",
+      "Pre-registration through the specified electronic link."
+    ],
+    "agree": "I agree to the registration criteria and conditions",
+    "continue": "Continue",
+    "title": "Login",
+    "usernameLabel": "Username",
+    "passwordLabel": "Password",
+    "usernameError": "Please enter your username",
+    "passwordError": "Please enter your password",
+    "submit": "Login",
+    "errors": {
+      "username": "Incorrect username",
+      "password": "Incorrect password"
+    },
+    "success": "Logged in successfully"
   }
 }

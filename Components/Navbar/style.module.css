@@ -97,3 +97,24 @@
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+
+.authButtons{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.loginBtn , 
+.logoutBtn ,
+.libraryBtn{
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 8px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}

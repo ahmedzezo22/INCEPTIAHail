@@ -12,10 +12,9 @@ import RegisterYourInterest from "@/Components/RegisterYourInterest";
 import Sponsors from "@/Components/Sponsors";
 import TargetGroup from "@/Components/TargetGroup";
 
-export default function Home() {
+const Home = () => {
   return (
-    <div style={{ overflow: "hidden" }} >
-      <Navbar />
+    <div style={{ overflow: "hidden" }}>
       <Header />
       <About />
       <ProjectObjectives />
@@ -27,7 +26,10 @@ export default function Home() {
       <RegisterYourInterest />
       <FrequentlyAskedQuestions />
       <ContactUs />
-      <Footer />
     </div>
   );
-}
+};
+
+Home.layout = "Home";
+
+export default Home;

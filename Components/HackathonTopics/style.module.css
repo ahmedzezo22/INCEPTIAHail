@@ -111,9 +111,10 @@
 }
 
 .card p{
-    font-weight: 600 ;
-  color: var(--main-color);
+  color:#888;
   margin: 8px 0;
+  font-size: 14px;
+  line-height: 32px;
 }
 .card ol{
     padding: 0 25px;
