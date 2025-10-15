@@ -31,7 +31,7 @@ const Login = () => {
 
   return (
     <div className="container">
-      <div className={styles.wrapperLogin}>
+      {/* <div className={styles.wrapperLogin}>
         {!showForm ? (
           <div className={styles.beforeLogin}>
             <h2>{t("login.conditionsTitle")}</h2>
@@ -97,6 +97,34 @@ const Login = () => {
             </Form>
           </div>
         )}
+      </div> */}
+      <div className={styles.wrapperLogin}>
+        <div className={styles.login}>
+          <h1>{t("login.title")}</h1>
+          <Form name="loginForm" layout="vertical" onFinish={onFinish}>
+            <Form.Item
+              label={t("login.usernameLabel")}
+              name="username"
+              rules={[{ required: true, message: t("login.usernameError") }]}
+            >
+              <Input placeholder="" />
+            </Form.Item>
+
+            <Form.Item
+              label={t("login.passwordLabel")}
+              name="password"
+              rules={[{ required: true, message: t("login.passwordError") }]}
+            >
+              <Input.Password placeholder="" />
+            </Form.Item>
+
+            <Form.Item>
+              <Button type="primary" htmlType="submit" block>
+                {t("login.submit")}
+              </Button>
+            </Form.Item>
+          </Form>
+        </div>
       </div>
     </div>
   );

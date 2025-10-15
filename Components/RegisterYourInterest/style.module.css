@@ -26,3 +26,22 @@
   cursor: pointer;
   text-decoration: underline;
 }
+
+
+.beforeLogin h2{
+    color: var(--main-color);
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+.beforeLogin ol{
+    padding: 0 50px;
+    list-style: auto;
+    padding: 0 25px;
+}
+
+.beforeLogin ol li{
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 5px;
+}

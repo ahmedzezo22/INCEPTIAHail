@@ -1,14 +1,17 @@
 "use client";
-import React from "react";
-import { Form, Input, Checkbox, notification } from "antd";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import styles from "./style.module.css";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { Form, Input, Button, Checkbox, message, notification } from "antd";
+import { useRouter } from "next/router";
 
 const RegisterYourInterest = () => {
   const { t } = useTranslation();
   const [form] = Form.useForm();
+  const router = useRouter();
+  const [agree, setAgree] = useState(false);
 
   const { ref, inView } = useInView({
     triggerOnce: false, // 👈 يتكرر مع كل دخول
@@ -65,7 +68,7 @@ const RegisterYourInterest = () => {
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
         >
-          <Form
+          {/* <Form
             form={form}
             layout="vertical"
             onFinish={onFinish}
@@ -142,7 +145,43 @@ const RegisterYourInterest = () => {
             <Form.Item style={{ display: "flex", justifyContent: "flex-end" }}>
               <button className="butDefault">{t("form.submit")}</button>
             </Form.Item>
-          </Form>
+          </Form> */}
+          <div className={styles.beforeLogin}>
+            <h2>{t("login.conditionsTitle")}</h2>
+            <ol>
+              {t("login.conditionsList", { returnObjects: true }).map(
+                (item, i) => (
+                  <li key={i}>{item}</li>
+                )
+              )}
+            </ol>
+
+            <h2>{t("login.requirementsTitle")}</h2>
+            <ol>
+              {t("login.requirementsList", { returnObjects: true }).map(
+                (item, i) => (
+                  <li key={i}>{item}</li>
+                )
+              )}
+            </ol>
+            <Checkbox
+              checked={agree}
+              onChange={(e) => setAgree(e.target.checked)}
+              style={{ marginTop: "20px" }}
+            >
+              {t("login.agree")}
+            </Checkbox>
+
+            <Button
+              type="primary"
+              block
+              disabled={!agree}
+              style={{ marginTop: "20px" }}
+              onClick={() => router.push("https://sdl.edu.sa/SDLPortal")}
+            >
+              {t("login.continue")}
+            </Button>
+          </div>
         </motion.div>
       </div>
     </div>
