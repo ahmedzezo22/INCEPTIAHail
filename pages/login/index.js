@@ -16,11 +16,11 @@ const Login = () => {
   const onFinish = (values) => {
     const { username, password } = values;
 
-    if (username !== "superAdmin" && password !== "123456") {
+    if (username !== "InceptiaHailUser" && password !== "Inceptia@123") {
       message.error(t("login.errors.username"));
-    } else if (username === "superAdmin" && password !== "123456") {
+    } else if (username === "InceptiaHailUser" && password !== "Inceptia") {
       message.error(t("login.errors.password"));
-    } else if (username !== "superAdmin" && password === "123456") {
+    } else if (username !== "InceptiaHailUser" && password === "Inceptia") {
       message.error(t("login.errors.username"));
     } else {
       message.success(t("login.success"));

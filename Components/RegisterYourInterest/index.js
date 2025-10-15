@@ -172,15 +172,18 @@ const RegisterYourInterest = () => {
               {t("login.agree")}
             </Checkbox>
 
-            <Button
-              type="primary"
-              block
-              disabled={!agree}
-              style={{ marginTop: "20px" }}
-              onClick={() => router.push("https://sdl.edu.sa/SDLPortal")}
-            >
-              {t("login.continue")}
-            </Button>
+                    <Button
+                        type="primary"
+                        block
+                        disabled={!agree}
+                        style={{ marginTop: "20px" }}
+                        href="https://sdl.edu.sa/SDLPortal"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+            المكتبة الرقمية
+          </Button>
+
           </div>
         </motion.div>
       </div>

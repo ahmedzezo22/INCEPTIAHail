@@ -20,7 +20,6 @@ const Home = () => {
       <ProjectObjectives />
       <TargetGroup />
       <HackathonTopics />
-      {/* <AreasAndChallenges /> */}
       <PrizesAndBenefits />
       <Sponsors />
       <RegisterYourInterest />

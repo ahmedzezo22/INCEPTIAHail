@@ -109,9 +109,15 @@ const Navbar = () => {
                 <button onClick={handleLogout} className={styles.logoutBtn}>
                   تسجيل خروج
                 </button>
-                <button onClick={goToLibrary} className={styles.libraryBtn}>
-                  المكتبة الرقمية
-                </button>
+                          <a
+                              href="https://sdl.edu.sa/SDLPortal"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className={styles.libraryBtn}
+                            >
+              المكتبة الرقمية
+            </a>
+
               </>
             )}
           </div>
