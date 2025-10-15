@@ -36,9 +36,9 @@ const About = () => {
         >
           <h4>{t("about.title")}</h4>
           <p>{t("about.desc")}</p>
-          <div className={styles.wrapperBut}>
+          {/* <div className={styles.wrapperBut}>
             <button className="butDefault">{t("about.but")}</button>
-          </div>
+          </div> */}
         </motion.div>
 
         <span></span>
