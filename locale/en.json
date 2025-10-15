@@ -304,6 +304,7 @@
   },
   "login": {
     "conditionsTitle": "First: Registration Criteria",
+    "RegisterNow": "Register Now",
     "conditionsList": [
       "The participant's personal information must be accurate and correct.",
       "Commitment to accuracy and quality of outputs.",

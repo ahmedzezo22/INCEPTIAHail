@@ -181,7 +181,7 @@ const RegisterYourInterest = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-            المكتبة الرقمية
+            {t("login.RegisterNow")}
           </Button>
 
           </div>
