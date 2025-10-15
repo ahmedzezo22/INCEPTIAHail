@@ -177,7 +177,7 @@ const RegisterYourInterest = () => {
                         block
                         disabled={!agree}
                         style={{ marginTop: "20px" }}
-                        href="https://sdl.edu.sa/SDLPortal"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSezw33u3Mc-8OPsRKsHR5wDeI_NFb623YuNBgQ2uneLXjBKzw/viewform"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
